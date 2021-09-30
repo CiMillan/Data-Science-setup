@@ -815,63 +815,6 @@ jupyter nbextension enable spellchecker/main
 jupyter nbextension enable code_prettify/code_prettify
 ```
 
-### Custom CSS
-
-Improve the display of the [`details` disclosure elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) in your notebooks.
-
-Open `custom/custom.css` in the config directory:
-```bash
-cd $(jupyter --config-dir)
-mkdir -p custom
-touch custom/custom.css
-code custom/custom.css
-```
-Edit `custom.css` with:
-
-```css
-summary {
-    cursor: pointer;
-    display:list-item;
-}
-summary::marker {
-    font-size: 1em;
-}
-```
-
-You can close VS Code.
-
-### `jupyter` check up
-Quit and restart your terminal first.
-
-Then, check you can launch a notebook server on your machine:
-```bash
-jupyter notebook
-```
-Your web browser should open on a `jupyter` window:
-
-![jupyter.png](images/jupyter.png)
-
-Click on `New`:
-
-![jupyter_new.png](images/jupyter_new.png)
-
-A tab should open on a new notebook:
-
-![jupyter_notebook.png](images/jupyter_notebook.png)
-
-### `nbextensions` check up
-
-Perform a sanity check for `jupyter notebooks nbextensions`. Click on `Nbextensions`:
-
-![jupyter_nbextensions.png](images/jupyter_nbextensions.png)
-
-Untick _"disable configuration for nbextensions without explicit compatibility"_ then check that the `nbextensions` are enabled:
-
-![nbextensions.png](images/nbextensions.png)
-
-You can close your web browser then terminate the jupyter server with `CTRL` + `C`.
-
-
 ## Windows settings
 
 ### Exchange files between Windows and Ubuntu
@@ -921,3 +864,27 @@ Some Python packages require a compiler to function properly. Let's install one:
 
 
 [For x86 systems](https://aka.ms/vs/16/release/vc_redist.x86.exe)
+
+## Docker 🐋
+
+Docker is an open platform for developing, shipping, and running applications.
+
+_if you already have Docker installed on your machine please update with the latest version_
+
+### Install Docker
+
+Go to [Docker for WSL2](https://docs.docker.com/docker-for-windows/wsl/).
+
+Download and install the Docker Desktop WSL 2 backend.
+
+Once done, start Docker.
+
+You should be able to run in a Ubuntu terminal:
+
+```bash
+docker run hello-world
+```
+
+The following message should print:
+
+![](images/docker_hello.png)

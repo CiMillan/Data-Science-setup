@@ -885,6 +885,3 @@ You should be able to run in a Ubuntu terminal:
 docker run hello-world
 ```
 
-The following message should print:
-
-![](images/docker_hello.png)

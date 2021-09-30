@@ -795,9 +795,7 @@ Let's try to run Jupyter:
 jupyter notebook
 ```
 
-This command should have opened a Jupyter page in your browser:
-
-![](images/wsl_jupyter_notebook.png)
+This command should have opened a Jupyter page in your browser.
 
 To stop the Jupyter server in the terminal, press `Ctrl` + `C`, enter y, then press Enter.
 

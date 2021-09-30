@@ -724,7 +724,7 @@ First, let's upgrade `pip`, the tool to install Python Packages from [pypi.org](
 pip install --upgrade pip
 ```
 
-Then let's install some packages for the first weeks of the program:
+Then let's install some packages:
 
 ```bash
 pip install -Ur https://raw.githubusercontent.com/myproject/data-runner/py-3.8.12-pandas-1.3-async-v2/requirements.txt

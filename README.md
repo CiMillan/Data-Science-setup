@@ -684,7 +684,7 @@ pyenv global 3.8.12
 
 Once again, quit **all your opened terminal windows** (`Cmd` + `Q`) and restart one.
 
-To check if this worked, run `python --version`. If you see `3.8.12`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
+To check if this worked, run `python --version`. If you see `3.8.12`, perfect! If not, check `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
 
 
 ## Python Virtual Environment
@@ -813,8 +813,6 @@ jupyter notebook
 This command should have opened a Jupyter page in your browser:
 
 ![](images/wsl_jupyter_notebook.png)
-
-If it is not the case, please call a TA.
 
 To stop the Jupyter server in the terminal, press `Ctrl` + `C`, enter y, then press Enter.
 

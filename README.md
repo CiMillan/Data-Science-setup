@@ -6,9 +6,11 @@ Please **read them carefully and execute all commands in the following order**.
 
 Let's start :rocket:
 
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
 
 ## Windows version
 
@@ -164,7 +166,7 @@ At first launch, you will be asked some information:
     - one word
     - lowercase
     - no special characters
-    - for example: `lewagon` or your `firstname`
+    - for example: `john` or your `firstname`
 - Choose a **password**
 - Confirm your password
 
@@ -666,7 +668,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
   xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 ```
 
-Let's install the [latest stable version of Python](https://www.python.org/doc/versions/) supported by Le Wagon's curriculum:
+Let's install the [latest stable version of Python](https://www.python.org/doc/versions/):
 
 ```bash
 pyenv install 3.8.12
@@ -687,7 +689,7 @@ To check if this worked, run `python --version`. If you see `3.8.12`, perfect! I
 
 ## Python Virtual Environment
 
-Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
+Before we start installing relevant Python packages, we will isolate the setup for my project into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
 
 First let's install this plugin:
 
@@ -697,16 +699,16 @@ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/py
 
 Once again, quit **all your opened terminal windows** (`Cmd` + `Q`) and restart one.
 
-Let's create the virtual environment we are going to use during the whole bootcamp:
+Let's create the virtual environment for myproject:
 
 ```bash
-pyenv virtualenv 3.8.12 lewagon
+pyenv virtualenv 3.8.12 myproject
 ```
 
 Let's now set the virtual environment with:
 
 ```bash
-pyenv global lewagon
+pyenv global myproject
 ```
 
 Great! Anytime we'll install Python package, we'll do it in that environment.
@@ -714,9 +716,9 @@ Great! Anytime we'll install Python package, we'll do it in that environment.
 
 ## Python packages
 
-Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
+Now that we have a pristine `myproject` virtual environment, it's time to install some packages in it.
 
-First, let's upgrade `pip`, the tool to install Python Packages from [pypi.org](https://pypi.org). In the latest terminal where the virtualenv `lewagon` is activated, run:
+First, let's upgrade `pip`, the tool to install Python Packages from [pypi.org](https://pypi.org). In the latest terminal where the virtualenv `myproject` is activated, run:
 
 ```bash
 pip install --upgrade pip
@@ -725,7 +727,7 @@ pip install --upgrade pip
 Then let's install some packages for the first weeks of the program:
 
 ```bash
-pip install -Ur https://raw.githubusercontent.com/lewagon/data-runner/py-3.8.12-pandas-1.3-async-v2/requirements.txt
+pip install -Ur https://raw.githubusercontent.com/myproject/data-runner/py-3.8.12-pandas-1.3-async-v2/requirements.txt
 ```
 
 Finally, more Data Science packages:
@@ -747,17 +749,17 @@ pip install -U 'tensorflow<2.6'
 
 Check your Python version with the following commands:
 ```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/python_checker.sh)" 3.8.12
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/myproject/data-setup/master/checks/python_checker.sh)" 3.8.12
 ```
 
 Run the following command to check if you successfully installed the required packages:
 ```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/pip_check.sh)"
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/myproject/data-setup/master/checks/pip_check.sh)"
 ```
 
 Now run the following command to check if you can load these packages:
 ```bash
-python -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/pip_check.py)"
+python -c "$(curl -fsSL https://raw.githubusercontent.com/myproject/data-setup/master/checks/pip_check.py)"
 ```
 
 Make sure you can run Jupyter:
@@ -772,9 +774,6 @@ Make sure that you are running the correct python version in the notebook. Open 
 ``` python
 import sys; sys.version
 ```
-
-That's it for today. During the bootcamp, we'll install more packages but we'll talk about that later.
-
 
 
 ## Configuring Jupyter Notebook to open in your browser

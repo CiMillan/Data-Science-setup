@@ -699,7 +699,7 @@ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/py
 
 Once again, quit **all your opened terminal windows** (`Cmd` + `Q`) and restart one.
 
-Let's create the virtual environment for ´myproject´:
+Let's create the virtual environment for `myproject`:
 
 ```bash
 pyenv virtualenv 3.8.12 myproject

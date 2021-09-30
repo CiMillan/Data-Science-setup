@@ -668,7 +668,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
   xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 ```
 
-Let's install the [latest stable version of Python](https://www.python.org/doc/versions/):
+Let's install the latest stable version of Python, [check here](https://www.python.org/doc/versions/):
 
 ```bash
 pyenv install 3.8.12

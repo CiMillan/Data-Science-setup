@@ -222,17 +222,6 @@ wsl -l -v
 You can now close this terminal window.
 
 
-## Chrome - your browser
-
-Install the Google Chrome browser if you haven't got it already and set it as a __default browser__.
-
-Follow the steps for your system from this link :point_right: [Install Google Chrome](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en-GB)
-
-__Why Chrome?__
-
-We recommend to use it as your default browser as it's most compatible with testing or running your code, as well as working with Google Cloud Platform. Another alternative is Firefox, however we don't recommend using other tools like Opera, Internet Explorer or Safari.
-
-
 ## Visual Studio Code
 
 ### Installation
@@ -372,9 +361,6 @@ You can save these changes by pressing `CTRL` + `S`
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
-
-**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
-
 
 ## Git
 

@@ -674,7 +674,7 @@ Let's install the latest stable version of Python, [check here](https://www.pyth
 pyenv install 3.8.12
 ```
 
-This command might take a while, this is perfectly normal. Don't hesitate to help other students seated next to you!
+This command might take a while.
 
 OK once this command is complete, we are going to tell the system to use this version of Python **by default**. This is done with:
 

@@ -1,6 +1,6 @@
 # Setup instructions
 
-You will find below the instructions to set up you computer for a Data Science project.
+You will find below the instructions to set up a Windows operating system (OS) for a Data Science project.
 
 Please **read them carefully and execute all commands in the following order**.
 
@@ -10,85 +10,13 @@ Let's start :rocket:
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
-
-
 ## Windows version
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
-### Windows 10
-
 To be able to set up your computer, you need to have **Windows 10** installed.
 
-To check your Windows version:
-- Press `Windows` + `R`
-- Type  `winver`
-- Press `Enter`
-
-:heavy_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
-
-:x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
-
-<details>
-  <summary>Upgrade to Windows 10</summary>
-
-  - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
-  - Install it. It should take roughly an hour, but this is dependent on your computer
-  - When the installation is over, execute the commands above to check that you now have **Windows 10**
-</details>
-
-### Latest updates
-
-Once you're sure that you're using Windows 10, you need to install all the latest updates.
-
-Open Windows Update:
-- Press `Windows` + `R`
-- Type  `ms-settings:windowsupdate`
-- Press `Enter`
-- Click on `Check updates`
-
-
-:heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
-
-:warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:
-
-:x: If you have an error message about Windows not being able to apply updates, please **contact a teacher**.
-
-<details>
-  <summary>Activate Windows Update Service to fix Updates</summary>
-
-  Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
-  - Press `Windows` + `R`
-  - Type  `services.msc`
-  - Press `Enter`
-  - Double Click `Windows Update Service`
-  - Set its `Startup` to `Automatic`
-  - Click on `Start`
-  - Click on `Ok`
-  Then let's try updates again!
-</details>
-
-### Minimum version
-
-Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
-
-- Press `Windows` + `R`
-- Type  `winver`
-- Press `Enter`
-
-Check the **Version number**:
-
-:heavy_check_mark: If it says at least `1903`, you are good to go :+1:
-
-:x: If it is below `1903`, please **contact a teacher**.
-
-
-## Virtualization
-
-We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
+We also need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
 For many computers, this is already the case. Let's check:
 - Press `Windows` + `R`
@@ -101,8 +29,7 @@ For many computers, this is already the case. Let's check:
 
 :heavy_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
 
-:x: If the line is missing or if the virtualization is disabled, please **contact a teacher before trying to activate the Virtualization**
-
+:x: If the line is missing or if the virtualization is disabled:
 <details>
   <summary>Activate Virtualization</summary>
 
@@ -161,8 +88,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :heavy_check_mark: If all three commands ran without any error, please restart your computer and continue below :+1:
 
-:x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
-
 ### Upgrade to WSL 2
 
 Once your computer has restarted, we need to download the WSL2 installer.
@@ -193,8 +118,6 @@ wsl --set-default-version 2
 ```
 
 :heavy_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
-
-:x: If the message you get is about Virtualization, please **contact a teacher**
 
 <details>
   <summary>Enable Virtual Machine Platform Windows feature</summary>
@@ -293,7 +216,7 @@ wsl -l -v
 
   Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
-  :x: If the conversion still does not work, please **contact a teacher**.
+ 
 </details>
 
 You can now close this terminal window.
@@ -498,8 +421,6 @@ gh --version
 
 :heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
-:x: Otherwise, please **contact a teacher**
-
 
 ## zsh
 
@@ -529,8 +450,6 @@ At the end your terminal should look like this:
 ![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/master/images/oh_my_zsh.png)
 
 :heavy_check_mark: If it does, you can continue :+1:
-
-:x: Otherwise, please **ask for a teacher**
 
 
 ## GitHub
@@ -671,7 +590,7 @@ If it does not,
 
 :heavy_check_mark: If you got this message, you can continue :+1:
 
-:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again. Do not hesitate to **contact a teacher**.
+:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again.
 
 
 ## GitHub CLI
@@ -710,8 +629,6 @@ gh auth status
 ```
 
 :heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
-
-:x: If not, **contact a teacher**.
 
 Then run the following configuration line:
 

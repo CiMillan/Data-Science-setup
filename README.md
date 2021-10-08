@@ -636,13 +636,11 @@ Then run the following configuration line:
 gh config set git_protocol ssh
 ```
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+Now let's fork a repository to your GitHub account.
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account (you'll need to click again on your picture to confirm _where_ you do the fork).
+:arrow_right: [Click here to **fork**](https://github.com/CiMillan/Data-Science-setup/fork) the `CiMillan/Data-Science-setup` repository to your account (you'll need to click again on your picture to confirm _where_ you do the fork).
 
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those
-files.
-
+Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/Data-Science-setup`.
 
 Open your terminal and run the following command:
 
@@ -651,43 +649,16 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
-There seems to be a problem with the previous step (`gh auth`).
+You should see your GitHub username printed.
 
 Time to fork the repo and clone it on your laptop:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
-gh repo fork lewagon/dotfiles --clone
+gh repo fork CiMillan/Data-Science-setup --clone
 ```
 
-Run the `dotfiles` installer.
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
-```
-
-Check the emails registered with your GitHub Account. You'll need to pick one
-at the next step:
-
-```bash
-gh api user/emails | jq -r '.[].email'
-```
-
-Run the git installer:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
-```
-
-:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
-you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
-don't do that, Kitt won't be able to track your progress.
-
-Please now **quit** all your opened terminal windows.
-</details>
-
-
+For organizational purposes, this is where we should store all our project packages in the future.
 
 ## Disable SSH passphrase prompt
 
